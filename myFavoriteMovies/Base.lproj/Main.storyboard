@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="-343" y="769"/>
         </scene>
-        <!--Item-->
+        <!--Comedy-->
         <scene sceneID="mc9-rq-dnZ">
             <objects>
-                <tableViewController id="Myl-xV-ekm" sceneMemberID="viewController">
+                <tableViewController id="Myl-xV-ekm" customClass="GenreTableViewController" customModule="myFavoriteMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HpE-sU-eFG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                             <outlet property="delegate" destination="Myl-xV-ekm" id="RHR-vW-lJf"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="evo-g0-0VT"/>
+                    <tabBarItem key="tabBarItem" title="Comedy" image="genre" id="evo-g0-0VT"/>
                     <navigationItem key="navigationItem" id="lbT-hK-CC4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="2230" y="117"/>
         </scene>
-        <!--Item-->
+        <!--Action-->
         <scene sceneID="iEQ-qm-uqJ">
             <objects>
-                <tableViewController id="Ifz-Vd-wJI" sceneMemberID="viewController">
+                <tableViewController id="Ifz-Vd-wJI" customClass="GenreTableViewController" customModule="myFavoriteMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jd2-ys-DHR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,7 @@
                             <outlet property="delegate" destination="Ifz-Vd-wJI" id="l1F-rT-s5M"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="F0a-jP-gtJ"/>
+                    <tabBarItem key="tabBarItem" title="Action" image="genre" id="F0a-jP-gtJ"/>
                     <navigationItem key="navigationItem" id="MCy-rV-b75"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="2230" y="-596"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="qvm-ju-X2A">
             <objects>
-                <tableViewController id="c0C-kO-B3Q" sceneMemberID="viewController">
+                <tableViewController id="c0C-kO-B3Q" customClass="FavoritesTableViewController" customModule="myFavoriteMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ziC-3D-rEb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
                             <outlet property="delegate" destination="c0C-kO-B3Q" id="dxW-vs-5Re"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="zbF-qg-zVN"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" id="zbF-qg-zVN"/>
                     <navigationItem key="navigationItem" id="ow2-58-RgC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -161,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="882" y="1653"/>
         </scene>
-        <!--Item-->
+        <!--Sci-Fi-->
         <scene sceneID="SEz-cc-EoI">
             <objects>
-                <tableViewController id="nwH-6H-AcL" sceneMemberID="viewController">
+                <tableViewController id="nwH-6H-AcL" customClass="GenreTableViewController" customModule="myFavoriteMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ue7-Aw-VOz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,7 +184,7 @@
                             <outlet property="delegate" destination="nwH-6H-AcL" id="5De-E3-6sC"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="fZ2-En-54W"/>
+                    <tabBarItem key="tabBarItem" title="Sci-Fi" image="genre" id="fZ2-En-54W"/>
                     <navigationItem key="navigationItem" id="etQ-gR-CJ7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -301,11 +301,11 @@
             </objects>
             <point key="canvasLocation" x="-606" y="-24"/>
         </scene>
-        <!--Item-->
+        <!--Action-->
         <scene sceneID="eks-UP-BKo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AMB-JA-jgZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CfL-la-sRP"/>
+                    <tabBarItem key="tabBarItem" title="Action" image="genre" id="CfL-la-sRP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qvx-rg-kYs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -320,11 +320,11 @@
             </objects>
             <point key="canvasLocation" x="1418" y="-596"/>
         </scene>
-        <!--Item-->
+        <!--Comedy-->
         <scene sceneID="PqN-Ug-7lK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="83K-tD-5pK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ak1-xT-Ax5"/>
+                    <tabBarItem key="tabBarItem" title="Comedy" image="genre" id="ak1-xT-Ax5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bWx-ry-S3A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -339,11 +339,11 @@
             </objects>
             <point key="canvasLocation" x="1418" y="117"/>
         </scene>
-        <!--Item-->
+        <!--Sci-Fi-->
         <scene sceneID="XFe-ly-UgV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M2r-1f-J4v" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6WI-k5-ixV"/>
+                    <tabBarItem key="tabBarItem" title="Sci-Fi" image="genre" id="6WI-k5-ixV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HxT-VR-bDB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -358,11 +358,11 @@
             </objects>
             <point key="canvasLocation" x="1418" y="855"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="HfF-0o-F7T">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="300-QU-bqZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ehd-DT-oen"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" id="ehd-DT-oen"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zOe-fb-2RR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -375,11 +375,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xLu-3V-Nk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="813"/>
+            <point key="canvasLocation" x="306" y="866"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera" width="64" height="64"/>
+        <image name="genre" width="30" height="30"/>
         <image name="heart" width="32" height="32"/>
     </resources>
 </document>
