@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sUb-Sj-nSv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myFavoriteMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,6 +22,99 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="909" y="277"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="3Sl-8q-Heq">
+            <objects>
+                <viewController id="sUb-Sj-nSv" customClass="LoginViewController" customModule="myFavoriteMovies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mTK-KW-Gpz"/>
+                        <viewControllerLayoutGuide type="bottom" id="oEx-2L-NcW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YpS-jR-nIT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r9e-Bf-Fux">
+                                <rect key="frame" x="20" y="70" width="560" height="230"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="3sO-eX-yxE">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="Ttf-za-Zw0"/>
+                                            <constraint firstAttribute="height" constant="64" id="q5X-eP-R5V"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favorite Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-xZ-Tkp">
+                                        <rect key="frame" x="0.0" y="64" width="560" height="71"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zmy-jn-heC">
+                                        <rect key="frame" x="0.0" y="135" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="LVe-7p-SUp"/>
+                                            <constraint firstAttribute="height" constant="30" id="sej-1Q-VTf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gp5-5o-fLF">
+                                        <rect key="frame" x="0.0" y="165" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="AeN-ya-QSz"/>
+                                            <constraint firstAttribute="height" constant="30" id="Z3a-L9-fmr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEt-EP-FA5">
+                                        <rect key="frame" x="0.0" y="195" width="560" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="yNv-7h-5cl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DebugTextLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sl-K2-8PA">
+                                <rect key="frame" x="20" y="308" width="560" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34901960784313724" green="0.79607843137254897" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8sl-K2-8PA" firstAttribute="leading" secondItem="r9e-Bf-Fux" secondAttribute="leading" id="Cay-KN-Gy3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="r9e-Bf-Fux" secondAttribute="leading" id="GVN-ck-BKB"/>
+                            <constraint firstItem="8sl-K2-8PA" firstAttribute="trailing" secondItem="r9e-Bf-Fux" secondAttribute="trailing" id="IOZ-Vl-dvz"/>
+                            <constraint firstItem="oEx-2L-NcW" firstAttribute="top" secondItem="r9e-Bf-Fux" secondAttribute="bottom" constant="300" id="JbO-ml-aWC"/>
+                            <constraint firstItem="oEx-2L-NcW" firstAttribute="top" secondItem="8sl-K2-8PA" secondAttribute="bottom" constant="252" id="evu-Nd-TKp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r9e-Bf-Fux" secondAttribute="trailing" id="fAj-zT-pZo"/>
+                            <constraint firstItem="r9e-Bf-Fux" firstAttribute="top" secondItem="mTK-KW-Gpz" secondAttribute="bottom" constant="50" id="gC7-SY-taL"/>
+                            <constraint firstItem="8sl-K2-8PA" firstAttribute="top" secondItem="r9e-Bf-Fux" secondAttribute="bottom" constant="8" symbolic="YES" id="w5X-bk-kqZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="debugTextLabel" destination="8sl-K2-8PA" id="qRC-eN-Occ"/>
+                        <outlet property="loginButton" destination="aEt-EP-FA5" id="TRv-qm-vNg"/>
+                        <outlet property="movieImageView" destination="3sO-eX-yxE" id="VTQ-8Z-gru"/>
+                        <outlet property="passwordTextField" destination="gp5-5o-fLF" id="gEu-J1-QfV"/>
+                        <outlet property="usernameTextField" destination="Zmy-jn-heC" id="iTQ-jd-3fy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMv-t4-RiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="436"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="64" height="64"/>
+    </resources>
 </document>

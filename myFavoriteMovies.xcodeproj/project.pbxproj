@@ -14,6 +14,12 @@
 		30B1863A1D09660600F351D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B186381D09660600F351D9 /* LaunchScreen.storyboard */; };
 		30B186451D09660600F351D9 /* myFavoriteMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B186441D09660600F351D9 /* myFavoriteMoviesTests.swift */; };
 		30B186501D09660600F351D9 /* myFavoriteMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1864F1D09660600F351D9 /* myFavoriteMoviesUITests.swift */; };
+		30B1865E1D0968A500F351D9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1865D1D0968A500F351D9 /* Config.swift */; };
+		30B186601D09690B00F351D9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1865F1D09690B00F351D9 /* Constants.swift */; };
+		30B186621D09694300F351D9 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B186611D09694300F351D9 /* GCD.swift */; };
+		30B186641D09696300F351D9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B186631D09696300F351D9 /* Movie.swift */; };
+		30B186691D0969C500F351D9 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B186681D0969C500F351D9 /* BorderedButton.swift */; };
+		30B1866C1D096B8D00F351D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1866B1D096B8D00F351D9 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		30B1864B1D09660600F351D9 /* myFavoriteMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFavoriteMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B1864F1D09660600F351D9 /* myFavoriteMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFavoriteMoviesUITests.swift; sourceTree = "<group>"; };
 		30B186511D09660600F351D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B1865D1D0968A500F351D9 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		30B1865F1D09690B00F351D9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		30B186611D09694300F351D9 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		30B186631D09696300F351D9 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		30B186681D0969C500F351D9 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		30B1866B1D096B8D00F351D9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				30B1862F1D09660600F351D9 /* AppDelegate.swift */,
-				30B186311D09660600F351D9 /* ViewController.swift */,
+				30B1865F1D09690B00F351D9 /* Constants.swift */,
+				30B186611D09694300F351D9 /* GCD.swift */,
+				30B186631D09696300F351D9 /* Movie.swift */,
+				30B1866A1D0969DF00F351D9 /* Provided Classes */,
+				30B186651D09699100F351D9 /* ViewControllers */,
 				30B186331D09660600F351D9 /* Main.storyboard */,
 				30B186361D09660600F351D9 /* Assets.xcassets */,
 				30B186381D09660600F351D9 /* LaunchScreen.storyboard */,
@@ -123,6 +139,24 @@
 				30B186511D09660600F351D9 /* Info.plist */,
 			);
 			path = myFavoriteMoviesUITests;
+			sourceTree = "<group>";
+		};
+		30B186651D09699100F351D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30B1866B1D096B8D00F351D9 /* LoginViewController.swift */,
+				30B186311D09660600F351D9 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		30B1866A1D0969DF00F351D9 /* Provided Classes */ = {
+			isa = PBXGroup;
+			children = (
+				30B186681D0969C500F351D9 /* BorderedButton.swift */,
+				30B1865D1D0968A500F351D9 /* Config.swift */,
+			);
+			name = "Provided Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B186621D09694300F351D9 /* GCD.swift in Sources */,
 				30B186321D09660600F351D9 /* ViewController.swift in Sources */,
+				30B186641D09696300F351D9 /* Movie.swift in Sources */,
 				30B186301D09660600F351D9 /* AppDelegate.swift in Sources */,
+				30B1866C1D096B8D00F351D9 /* LoginViewController.swift in Sources */,
+				30B1865E1D0968A500F351D9 /* Config.swift in Sources */,
+				30B186601D09690B00F351D9 /* Constants.swift in Sources */,
+				30B186691D0969C500F351D9 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
