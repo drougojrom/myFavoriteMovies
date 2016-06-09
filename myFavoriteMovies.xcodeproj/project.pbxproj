@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		305EB03D1D0974E300059667 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EB03C1D0974E300059667 /* MovieDetailViewController.swift */; };
 		30B186301D09660600F351D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1862F1D09660600F351D9 /* AppDelegate.swift */; };
 		30B186321D09660600F351D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B186311D09660600F351D9 /* ViewController.swift */; };
 		30B186351D09660600F351D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B186331D09660600F351D9 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		305EB03C1D0974E300059667 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		30B1862C1D09660600F351D9 /* myFavoriteMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFavoriteMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B1862F1D09660600F351D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B186311D09660600F351D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		30B186651D09699100F351D9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				305EB03C1D0974E300059667 /* MovieDetailViewController.swift */,
 				30B1866B1D096B8D00F351D9 /* LoginViewController.swift */,
 				30B186311D09660600F351D9 /* ViewController.swift */,
 			);
@@ -297,6 +300,7 @@
 				30B1866C1D096B8D00F351D9 /* LoginViewController.swift in Sources */,
 				30B1865E1D0968A500F351D9 /* Config.swift in Sources */,
 				30B186601D09690B00F351D9 /* Constants.swift in Sources */,
+				305EB03D1D0974E300059667 /* MovieDetailViewController.swift in Sources */,
 				30B186691D0969C500F351D9 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +526,7 @@
 				30B186561D09660600F351D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30B186571D09660600F351D9 /* Build configuration list for PBXNativeTarget "myFavoriteMoviesTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +535,7 @@
 				30B186591D09660600F351D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30B1865A1D09660600F351D9 /* Build configuration list for PBXNativeTarget "myFavoriteMoviesUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +544,7 @@
 				30B1865C1D09660600F351D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
